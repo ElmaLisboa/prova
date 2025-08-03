@@ -1,0 +1,29 @@
+.popup {
+  position: fixed;
+  bottom: 20px;
+  left: -400px; /* fora da tela no começo */
+  background: #19b001;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  z-index: 9999;
+  transition: left 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
+.popup.show {
+  left: 20px;
+  opacity: 1;
+}
+
+.popup.hide {
+  left: -400px;
+  opacity: 0;
+}
+
+strong {
+  font-weight: bold;
+}
